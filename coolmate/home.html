@@ -13,6 +13,10 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/card.css">
+
+  <link rel="stylesheet" href="./scss/style.css">
+  <link rel="stylesheet" href="./scss/brand-banner.css">
 </head>
 
 <body>
@@ -21,11 +25,7 @@
       <ul>
         <li>
           <a href="/?itm_source=navbar">
-            <img
-              src="https://www.coolmate.me/images/logo-coolmate-v2.svg"
-              alt="logo-coolmate"
-              class="topbar__logo"
-            >
+            <img src="https://www.coolmate.me/images/logo-coolmate-v2.svg" alt="logo-coolmate" class="topbar__logo">
           </a>
         </li>
         <li><a href="#">CM24</a></li>
@@ -40,30 +40,26 @@
     </div>
 
     <div class="topbar-promotion">
-      <a href="https://www.coolmate.me/collection/ready-to-wear?itm_source=navbar"  class="topbar__section">
+      <a href="https://www.coolmate.me/collection/ready-to-wear?itm_source=navbar" class="topbar__section">
         Trải nghiệm BST Ready To Wear
 
-        <img
-          src="https://mcdn.coolmate.me/image/August2023/mceclip0_10.png"
-          alt=""
-          class="topbar__buy-now"
-        >
+        <img src="https://mcdn.coolmate.me/image/August2023/mceclip0_10.png" alt="" class="topbar__buy-now">
       </a>
     </div>
 
     <div class="header">
       <a href="/"><img src="https://www.coolmate.me/images/logo-coolmate-new.svg?v=1" alt="Logo Coolmate"></a>
 
-      <nav class="d-inline">
+      <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item"><a href="#">Liên kết 1</a></li>
-          <li class="header__item"><a href="#">Liên kết 2</a></li>
-          <li class="header__item"><a href="#">Liên kết 3</a></li>
-          <li class="header__item"><a href="#">Liên kết 4</a></li>
-          <li class="header__item"><a href="#">Liên kết 5</a></li>
-          <li class="header__item"><a href="#">Liên kết 6</a></li>
-          <li class="header__item"><a href="#">Liên kết 7</a></li>
-          <li class="header__item"><a href="#">Liên kết 8</a></li>
+          <li class="header__item"><a href="#">SALE</a></li>
+          <li class="header__item"><a href="#">Đồ lót nam</a></li>
+          <li class="header__item"><a href="#">Mặc hàng ngày</a></li>
+          <li class="header__item"><a href="#">Đồ thể thao</a></li>
+          <li class="header__item"><a href="#">Streetwear</a></li>
+          <li class="header__item"><a href="#">Nước hoa</a></li>
+          <li class="header__item"><a href="#">Sản xuất riêng</a></li>
+          <li class="header__item"><a href="#">Case&Share</a></li>
         </ul>
       </nav>
 
@@ -72,27 +68,440 @@
         <input type="text" class="header__search" placeholder="Tìm kiếm sản phẩm...">
       </span>
 
-      <div>
-          <button class="header__button">
-            <i class="fa-solid fa-user-tie fa-lg user__icon"></i>
-          </button>
-    
-          <button class="header__button cart__box">
-            <i class="fa-solid fa-cart-shopping fa-lg cart__icon"></i>
-            <span class="cart__counter">2</span>
-          </button>
+      <div class="button__wrapper">
+        <button class="header__button">
+          <i class="fa-solid fa-user-tie fa-lg user__icon"></i>
+        </button>
+
+        <button class="header__button cart__box">
+          <i class="fa-solid fa-cart-shopping fa-lg cart__icon"></i>
+          <span class="cart__counter">2</span>
+        </button>
       </div>
 
     </div>
   </header>
 
-  <main class="main__banner">
-      <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-      <a href=""><img src="https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/September2023/DO-MAC-HANG-NGAY_32.png" alt=""></a>
-    <section class="running__banner"></section>
-    <section class="running__article">running__article</section>
-    <section class="running__feature">running__feature</section>
-    <section class="slider">slider</section>
+  <main>
+    <section class="running__banner">
+      <img class="banner__image"
+        src="https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/September2023/Ready-2-wear-banner19.jpg"
+        alt="anh banner">
+    </section>
+
+
+  <section class="running__article">
+    <div class="container">
+      <div class="homepage-products__tab">
+          <div class="homepage-products__tab-item-active">
+            <a href="#">Sản phẩm mới</a>
+          </div>
+          <div class="homepage-products__tab-item">
+            <a href="#">Bán chạy nhất</a>
+          </div>
+      </div>
+      <div class="card__list">
+        <div class="card">
+          <div class="card__top">
+            <div class="top__header">
+              <div class="top__header--left">
+                <span class="header__play"><i class="fa-solid fa-play"></i></span>
+    
+                <span class="header__rate">4.9<i class="fa-solid fa-star fa-2xs"></i></span>
+    
+                <span class="header__couter">(61)</span>
+              </div>
+    
+              <div class="top__header--right">
+                <span class="header__tag header__tag--green">Đáng mua</span>
+                <!-- <span class="header__tag header__tag--blue">New</span> -->
+              </div>
+            </div>
+    
+            <div class="image__block">
+              <img class="block__image"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/August2023/ATCBBS-MODEL-9.jpg"
+                alt="ảnh sản phẩm">
+  
+              <img class="block__image hover"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/April2023/testAsset_7-100.jpg"
+                alt="ảnh sản phẩm">
+              <div class="block__size">
+                <div class="size__title text-primary">Thêm nhanh vào giỏ hàng +</div>
+                <div class="size__list">
+                  <button class="size__item">S</button>
+                  <button class="size__item">M</button>
+                  <button class="size__item">L</button>
+                  <button class="size__item">XL</button>
+                  <button class="size__item">2XL</button>
+                  <button class="size__item">3XL</button>
+                  <button class="size__item">4XL</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="card__body">
+            <div class="body__colors">
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+            </div>
+    
+            <div class="card__product-name">Tanktop thể thao Active V2</div>
+    
+            <div class="card__product-color">Đen/ Cat & Dog</div>
+    
+            <div class="card__product-price">
+              <ins class="price__discounted">299.000đ</ins>
+    
+              <del class="price__price">399.000đ</del>
+    
+              <span class="price__discount">-33%</span>
+            </div>
+    
+            <div class="card__product-note--hightlight">
+              Mua 2 giảm thêm 10%
+            </div>
+    
+            <div class="card__product-note">
+              Sản phẩm giao chậm từ 1-2 ngày
+            </div>
+    
+          </div>
+      </div>
+  
+      <div class="card">
+          <div class="card__top">
+            <div class="top__header">
+              <div class="top__header--left">
+                <span class="header__play"><i class="fa-solid fa-play"></i></span>
+    
+                <span class="header__rate">4.9<i class="fa-solid fa-star fa-2xs"></i></span>
+    
+                <span class="header__couter">(61)</span>
+              </div>
+    
+              <div class="top__header--right">
+                <span class="header__tag header__tag--green">Đáng mua</span>
+                <!-- <span class="header__tag header__tag--blue">New</span> -->
+              </div>
+            </div>
+    
+            <div class="image__block">
+              <img class="block__image"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/August2023/ATCBBS-MODEL-9.jpg"
+                alt="ảnh sản phẩm">
+  
+              <img class="block__image hover"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/April2023/testAsset_7-100.jpg"
+                alt="ảnh sản phẩm">
+              <div class="block__size">
+                <div class="size__title text-primary">Thêm nhanh vào giỏ hàng +</div>
+                <div class="size__list">
+                  <button class="size__item">S</button>
+                  <button class="size__item">M</button>
+                  <button class="size__item">L</button>
+                  <button class="size__item">XL</button>
+                  <button class="size__item">2XL</button>
+                  <button class="size__item">3XL</button>
+                  <button class="size__item">4XL</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="card__body">
+            <div class="body__colors">
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+            </div>
+    
+            <div class="card__product-name">Tanktop thể thao Active V2</div>
+    
+            <div class="card__product-color">Đen/ Cat & Dog</div>
+    
+            <div class="card__product-price">
+              <ins class="price__discounted">299.000đ</ins>
+    
+              <del class="price__price">399.000đ</del>
+    
+              <span class="price__discount">-33%</span>
+            </div>
+    
+            <div class="card__product-note--hightlight">
+              Mua 2 giảm thêm 10%
+            </div>
+    
+            <div class="card__product-note">
+              Sản phẩm giao chậm từ 1-2 ngày
+            </div>
+    
+          </div>
+      </div>
+  
+      <div class="card">
+          <div class="card__top">
+            <div class="top__header">
+              <div class="top__header--left">
+                <span class="header__play"><i class="fa-solid fa-play"></i></span>
+    
+                <span class="header__rate">4.9<i class="fa-solid fa-star fa-2xs"></i></span>
+    
+                <span class="header__couter">(61)</span>
+              </div>
+    
+              <div class="top__header--right">
+                <span class="header__tag header__tag--green">Đáng mua</span>
+                <!-- <span class="header__tag header__tag--blue">New</span> -->
+              </div>
+            </div>
+    
+            <div class="image__block">
+              <img class="block__image"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/August2023/ATCBBS-MODEL-9.jpg"
+                alt="ảnh sản phẩm">
+  
+              <img class="block__image hover"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/April2023/testAsset_7-100.jpg"
+                alt="ảnh sản phẩm">
+              <div class="block__size">
+                <div class="size__title text-primary">Thêm nhanh vào giỏ hàng +</div>
+                <div class="size__list">
+                  <button class="size__item">S</button>
+                  <button class="size__item">M</button>
+                  <button class="size__item">L</button>
+                  <button class="size__item">XL</button>
+                  <button class="size__item">2XL</button>
+                  <button class="size__item">3XL</button>
+                  <button class="size__item">4XL</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="card__body">
+            <div class="body__colors">
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+            </div>
+    
+            <div class="card__product-name">Tanktop thể thao Active V2</div>
+    
+            <div class="card__product-color">Đen/ Cat & Dog</div>
+    
+            <div class="card__product-price">
+              <ins class="price__discounted">299.000đ</ins>
+    
+              <del class="price__price">399.000đ</del>
+    
+              <span class="price__discount">-33%</span>
+            </div>
+    
+            <div class="card__product-note--hightlight">
+              Mua 2 giảm thêm 10%
+            </div>
+    
+            <div class="card__product-note">
+              Sản phẩm giao chậm từ 1-2 ngày
+            </div>
+    
+          </div>
+      </div>
+  
+      <div class="card">
+          <div class="card__top">
+            <div class="top__header">
+              <div class="top__header--left">
+                <span class="header__play"><i class="fa-solid fa-play"></i></span>
+    
+                <span class="header__rate">4.9<i class="fa-solid fa-star fa-2xs"></i></span>
+    
+                <span class="header__couter">(61)</span>
+              </div>
+    
+              <div class="top__header--right">
+                <span class="header__tag header__tag--green">Đáng mua</span>
+                <!-- <span class="header__tag header__tag--blue">New</span> -->
+              </div>
+            </div>
+    
+            <div class="image__block">
+              <img class="block__image"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/August2023/ATCBBS-MODEL-9.jpg"
+                alt="ảnh sản phẩm">
+  
+              <img class="block__image hover"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/April2023/testAsset_7-100.jpg"
+                alt="ảnh sản phẩm">
+              <div class="block__size">
+                <div class="size__title text-primary">Thêm nhanh vào giỏ hàng +</div>
+                <div class="size__list">
+                  <button class="size__item">S</button>
+                  <button class="size__item">M</button>
+                  <button class="size__item">L</button>
+                  <button class="size__item">XL</button>
+                  <button class="size__item">2XL</button>
+                  <button class="size__item">3XL</button>
+                  <button class="size__item">4XL</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="card__body">
+            <div class="body__colors">
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+            </div>
+    
+            <div class="card__product-name">Tanktop thể thao Active V2</div>
+    
+            <div class="card__product-color">Đen/ Cat & Dog</div>
+    
+            <div class="card__product-price">
+              <ins class="price__discounted">299.000đ</ins>
+    
+              <del class="price__price">399.000đ</del>
+    
+              <span class="price__discount">-33%</span>
+            </div>
+    
+            <div class="card__product-note--hightlight">
+              Mua 2 giảm thêm 10%
+            </div>
+    
+            <div class="card__product-note">
+              Sản phẩm giao chậm từ 1-2 ngày
+            </div>
+    
+          </div>
+      </div>
+  
+      <div class="card">
+          <div class="card__top">
+            <div class="top__header">
+              <div class="top__header--left">
+                <span class="header__play"><i class="fa-solid fa-play"></i></span>
+    
+                <span class="header__rate">4.9<i class="fa-solid fa-star fa-2xs"></i></span>
+    
+                <span class="header__couter">(61)</span>
+              </div>
+    
+              <div class="top__header--right">
+                <span class="header__tag header__tag--green">Đáng mua</span>
+                <!-- <span class="header__tag header__tag--blue">New</span> -->
+              </div>
+            </div>
+    
+            <div class="image__block">
+              <img class="block__image"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/August2023/ATCBBS-MODEL-9.jpg"
+                alt="ảnh sản phẩm">
+  
+              <img class="block__image hover"
+                src="https://media.coolmate.me/cdn-cgi/image/width=672,height=990,quality=85,format=auto/uploads/April2023/testAsset_7-100.jpg"
+                alt="ảnh sản phẩm">
+              <div class="block__size">
+                <div class="size__title text-primary">Thêm nhanh vào giỏ hàng +</div>
+                <div class="size__list">
+                  <button class="size__item">S</button>
+                  <button class="size__item">M</button>
+                  <button class="size__item">L</button>
+                  <button class="size__item">XL</button>
+                  <button class="size__item">2XL</button>
+                  <button class="size__item">3XL</button>
+                  <button class="size__item">4XL</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="card__body">
+            <div class="body__colors">
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+              <span class="color__item"></span>
+            </div>
+    
+            <div class="card__product-name">Tanktop thể thao Active V2</div>
+    
+            <div class="card__product-color">Đen/ Cat & Dog</div>
+    
+            <div class="card__product-price">
+              <ins class="price__discounted">299.000đ</ins>
+    
+              <del class="price__price">399.000đ</del>
+    
+              <span class="price__discount">-33%</span>
+            </div>
+    
+            <div class="card__product-note--hightlight">
+              Mua 2 giảm thêm 10%
+            </div>
+    
+            <div class="card__product-note">
+              Sản phẩm giao chậm từ 1-2 ngày
+            </div>
+    
+          </div>
+      </div>
+      </div>
+    </div>
+  
+  </section>
+
+    <section class="slider">
+      <section class="slider__container">
+        <div class="banner">
+          <a href=""><img src="https://mcdn.coolmate.me/image/September2023/mceclip5_29.jpg" width="100%" alt=""></a>
+        </div>
+        
+        <div class="banner__infos infos">
+          <h3 class="infos__category">NƯỚC HOA CM24</h3>
+          <h2 class="infos__title">MOOD BOOSTER<br>2023</h2>
+          <a class="infos__btn">Khám phá ngay</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="running__feature">
+      <section class="brand container ">
+        <div class="banner">
+          <img class="banner__picture" src="https://media.coolmate.me/image/September2023/mceclip0_39.jpg" alt="">
+    
+          <div class="banner__infos infos">
+            <h3 class="infos__category">NƯỚC HOA CM24</h3>
+            <h2 class="infos__title">MOOD BOOSTER<br>2023</h2>
+            <a class="infos__btn">Khám phá ngay</a>
+          </div>
+        </div>
+    
+        <div class="banner">
+          <img class="banner__picture" src="https://media.coolmate.me/image/September2023/mceclip1_58.jpg" alt="">
+    
+          <div class="banner__infos infos">
+            <h3 class="infos__category">NƯỚC HOA CM24</h3>
+            <h2 class="infos__title">MOOD BOOSTER<br>2023</h2>
+            <a class="infos__btn">Khám phá ngay</a>
+          </div>
+        </div>
+      </section>
+    </section>
   </main>
 
   <footer></footer>

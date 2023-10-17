@@ -4,6 +4,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  font-size: 10px;
 }
 
 .site-header {
@@ -14,8 +15,6 @@ html {
   height: auto;
   z-index: 10;
   transition: all .3s; */
-  box-sizing: border-box;
-  display: block;
 }
 
 .topbar {
@@ -164,6 +163,10 @@ html {
   top: 50%;
 }
 
+.button__wrapper {
+  display: flex;
+}
+
 .header__button {
   width: 48px;
   height: 48px;
@@ -194,22 +197,16 @@ html {
   align-items: center;
 }
 
-.main__banner {
-  /* position: absolute; */
-  left: 0;
-  top: 0;
-  width: 100vw ;
-  height: 100%;
-  object-fit: cover;
-}
 .running__banner {
-  position: absolute;
   width: 100%;
   height: 600px;
-  background-color: var(--empty);
-  border-bottom: 1px solid red;
-  font-size: 14px;
-  line-height: 21px;
+  
+}
+
+.banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .running__article {
@@ -227,9 +224,9 @@ html {
 }
 
 .slider {
+  display: inline;
   width: 100%;
   height: 600px;
   background-color: var(--empty);
   border-bottom: 1px solid red;
 }
-
