@@ -16,6 +16,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  margin-top: 100px;
 }
 
 .title {
@@ -30,6 +31,12 @@ html {
   line-height: 120%;
   margin-top: 8px;
   margin-bottom: 50px;
+}
+
+.title__description {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Inter;
 }
 
 .margin-top-xl {
@@ -171,10 +178,6 @@ html {
   height: 32px; */
 }
 
-.service .menu {
-  display: flex;
-  margin: 20px -15px;
-}
 .service .card {
   width: 100%;
   display: flex;
@@ -257,7 +260,14 @@ html {
   height: 32px; */
 }
 
-.title__description {
-  text-align: center;
-  color: #787878;
-}/*# sourceMappingURL=food.css.map */
+.menu__service {
+  display: flex;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+img {
+  width: 368px;
+  height: 220px;
+  flex-shrink: 0;
+}/*# sourceMappingURL=service.css.map */
