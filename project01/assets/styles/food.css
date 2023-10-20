@@ -175,7 +175,10 @@ html {
   display: flex;
   margin: 20px -15px;
 }
-.service .card {
+.service .title__sub {
+  margin-top: 50px;
+}
+.service .card__service {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -194,12 +197,6 @@ html {
 }
 .service .card__body {
   width: 100%;
-}
-.service .card__rating {
-  height: 22px;
-}
-.service .card__rating > img {
-  height: 100%;
 }
 .service .card__name {
   margin-top: 10px;
@@ -243,18 +240,6 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-.service .card__icons {
-  display: flex;
-  gap: 10px;
-}
-.service .card__icons--like {
-  /* width: 32px;
-  height: 32px; */
-}
-.service .card__icons--share {
-  /* width: 32px;
-  height: 32px; */
 }
 
 .title__description {
