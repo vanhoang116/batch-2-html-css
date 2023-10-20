@@ -173,13 +173,17 @@ html {
 
 .service .menu {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   margin: 20px -15px;
 }
 .service .title__sub {
   margin-top: 50px;
 }
 .service .card__service {
-  width: 100%;
+  width: calc(33.3333333333% - 30px);
+  min-width: 300px;
+  margin: 20px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
